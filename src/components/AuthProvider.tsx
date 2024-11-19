@@ -5,7 +5,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   return (
     <DynamicContextProvider
       settings={{
-        environmentId: 'a47f08df-6fd5-4b89-8036-39129e9debbf',
+        environmentId: 'd3f28879-b740-45c3-82ec-7ba468303803',
         walletConnectors: [EthereumWalletConnectors],
       }}
     >

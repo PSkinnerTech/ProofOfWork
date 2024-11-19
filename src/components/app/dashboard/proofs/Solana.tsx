@@ -1,25 +1,27 @@
-import { Linkedin as LinkedinIcon } from "lucide-react"
+import { SimpleIconsSolana } from "@/components/icons/Solana"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Button } from "@/components/ui/button"
 
-export function LinkedinProof() {
+export function SolanaProof() {
   return (
-    <div className="w-[300px] p-4 border rounded-lg flex flex-col gap-3 pt">
-      <LinkedinIcon className="w-6 h-6" />
+    <div className="w-[300px] p-4 border rounded-lg flex flex-col gap-3">
+      <SimpleIconsSolana 
+        className="w-6 h-6"
+      />
       
-      <h3 className="text-lg font-semibold text-left">LinkedIn</h3>
+      <h3 className="text-lg font-semibold text-left">Solana</h3>
       
       <Button>
-        Connect LinkedIn
+        Connect Wallet
       </Button>
       
       <div className="flex flex-col gap-2">
         <div className="flex items-center justify-between">
-          <span>LinkedIn Connected</span>
+          <span>Wallet Connected</span>
           <Checkbox className="bg-white" />
         </div>
         <div className="flex items-center justify-between">
-          <span>LinkedIn Verified</span>
+          <span>Wallet Verified</span>
           <Checkbox className="bg-white" />
         </div>
       </div>
