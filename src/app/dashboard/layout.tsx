@@ -1,4 +1,3 @@
-import { DashboardNavbar } from "@/components/app/dashboard/Navbar";
 import { RequireAuth } from "@/components/app/RequireAuth";
 
 export default function DashboardLayout({
@@ -8,10 +7,7 @@ export default function DashboardLayout({
 }) {
   return (
     <RequireAuth>
-      <div className="flex">
-        <DashboardNavbar />
-        <main className="flex-1 p-8">{children}</main>
-      </div>
+      {children}
     </RequireAuth>
   );
 }
