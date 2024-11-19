@@ -1,17 +1,8 @@
-import { DashboardNavbar } from "@/components/app/dashboard/Navbar";
-import { RequireAuth } from "@/components/app/RequireAuth";
-
-export default function DashboardLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function DashboardPage() {
   return (
-    <RequireAuth>
-      <div className="flex">
-        <DashboardNavbar />
-        <main className="flex-1 p-8">{children}</main>
-      </div>
-    </RequireAuth>
+    <div>
+      <h1>Dashboard</h1>
+      {/* Add your dashboard content here */}
+    </div>
   );
 }
